@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F1W-PV-1IP">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="pub_chime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gce-Pz-65b">
+                                <rect key="frame" x="10" y="74" width="300" height="484"/>
+                                <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Ding-Dong">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonPush:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="t1E-Ns-XNV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gce-Pz-65b" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="26s-rv-ijj"/>
+                            <constraint firstItem="gce-Pz-65b" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="CEW-Vw-HKa"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="gce-Pz-65b" secondAttribute="bottom" constant="10" id="HHT-Bp-NOp"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="gce-Pz-65b" secondAttribute="bottom" id="IH0-1T-HOz"/>
+                            <constraint firstItem="gce-Pz-65b" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="JUB-Ev-uDx"/>
+                            <constraint firstAttribute="trailing" secondItem="gce-Pz-65b" secondAttribute="trailing" constant="10" id="KMb-el-NOg"/>
+                            <constraint firstAttribute="trailing" secondItem="gce-Pz-65b" secondAttribute="trailing" id="LKg-U4-wob"/>
+                            <constraint firstItem="gce-Pz-65b" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="iAD-gZ-SiW"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="gce-Pz-65b" secondAttribute="bottom" constant="10" id="imf-6C-e33"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="gce-Pz-65b" secondAttribute="bottom" id="mmp-Cm-tN8"/>
+                            <constraint firstItem="gce-Pz-65b" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="ukr-is-HuC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CEW-Vw-HKa"/>
+                                <exclude reference="JUB-Ev-uDx"/>
+                                <exclude reference="LKg-U4-wob"/>
+                                <exclude reference="ukr-is-HuC"/>
+                                <exclude reference="IH0-1T-HOz"/>
+                                <exclude reference="mmp-Cm-tN8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="cXk-IE-wPx">
+                        <barButtonItem key="leftBarButtonItem" id="XTb-JE-R5u">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="gms-8r-yUo">
+                                <rect key="frame" x="16" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="infoClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q5j-v5-Ua0"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="zfG-i8-Cp8">
+                            <connections>
+                                <action selector="actionButtonClick:" destination="vXZ-lx-hvc" id="zsH-Ju-sii"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="buttonStatus" destination="gce-Pz-65b" id="Jsi-Qc-wYS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1135" y="231"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="weV-TQ-yim">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F1W-PV-1IP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cXR-oL-nTg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="jtV-MP-z86"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rye-fk-rU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="-446"/>
+        </scene>
+    </scenes>
+</document>

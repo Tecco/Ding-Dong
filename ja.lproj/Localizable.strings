@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  pub_chime
+
+  Created by Tecco on 2015/07/27.
+  Copyright (c) 2015年 Tecco's Project. All rights reserved.
+*/
+
+"appName" = "居酒屋のピンポン";
+"dialogTitle" = "注意事項";
+
+"notice1" = "1. むやみに連打するべからず";
+"notice2" = "2. お店にあるならそっちを押すべし";
+"notice3" = "3. 周りに迷惑をかけない程度に押すべし";
+
+"menu" = "メニュー";
+"share" = "シェア";
+"change" = "利用シーン変更";
+"cancel" = "キャンセル";
+
+"pub" = "居酒屋";
+"restaurant" = "レストラン";
+"bar" = "バー";
+
+"dingdong" = "ピンポーン";
+"bingo" = "キンコーン";
+"ting" = "カーン";

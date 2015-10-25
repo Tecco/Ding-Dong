@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  pub_chime
+
+  Created by Tecco on 2015/07/27.
+  Copyright (c) 2015年 Tecco's Project. All rights reserved.
+*/
+
+"appName" = "Pub-Ding-Dong";
+"dialogTitle" = "CAUTION";
+
+"notice1" = "1. No Barrage button immoderately";
+"notice2" = "2. Please push official button if there is its button in the shop";
+"notice3" = "3. Please push to the extent that it does not bother around";
+
+"menu" = "Menu";
+"share" = "Share";
+"change" = "Change Scene";
+"cancel" = "Cancel";
+
+"pub" = "Pub";
+"restaurant" = "Restaurant";
+"bar" = "Bar";
+
+"dingdong" = "Ding-Dong";
+"bingo" = "Bingo";
+"ting" = "Ting";
